@@ -20,7 +20,9 @@ Quick Start
 #### Cassandra metamodel maven plugin ####
 ##### Goals #####
 * _generate_ : generates the metamodel for the provided cql files. Bound on generate-sources.
+
 ##### Plugin definition example #####
+
         <plugin>
 				<groupId>fr.vberetti.cassandra.metamodel</groupId>
 				<artifactId>cassandra-metamodel-maven-plugin</artifactId>
@@ -41,6 +43,7 @@ Quick Start
 					</execution>
 				</executions>
 			</plugin>
+
 #### Manually ####
 Cassandra metamodel maven plugin is optional. Be free to define the metamodel manually.
 
