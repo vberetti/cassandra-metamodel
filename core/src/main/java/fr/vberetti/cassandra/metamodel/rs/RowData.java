@@ -26,7 +26,7 @@ import com.datastax.driver.core.Row;
 
 import fr.vberetti.cassandra.metamodel.ColumnMetamodel;
 
-public class RowDataGetter {
+public class RowData {
 
 	public static String getString(Row row, ColumnMetamodel<String> column){
 		return row.getString(column.getColumnName());

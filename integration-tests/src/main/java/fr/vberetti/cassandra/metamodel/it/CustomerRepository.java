@@ -27,7 +27,7 @@ import com.datastax.driver.core.querybuilder.Select.Where;
 import com.datastax.driver.core.querybuilder.TypedQueryBuilder;
 import com.google.common.base.Function;
 
-import fr.vberetti.cassandra.metamodel.rs.RowDataGetter;
+import fr.vberetti.cassandra.metamodel.rs.RowData;
 
 public class CustomerRepository {
 
@@ -49,7 +49,7 @@ public class CustomerRepository {
 				new Function<Row, Integer>() {
 					@Override
 					public Integer apply(Row row) {
-						return RowDataGetter.getInt(row,
+						return RowData.getInt(row,
 								CustomerOrders_.orderId);
 					}
 				}));

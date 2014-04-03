@@ -37,7 +37,7 @@ import com.google.common.collect.Lists;
 
 import fr.vberetti.cassandra.metamodel.generation.MetamodelGenerator;
 
-@Mojo(name = "generate", defaultPhase = LifecyclePhase.GENERATE_SOURCES)
+@Mojo(name = "generate", defaultPhase = LifecyclePhase.GENERATE_SOURCES, requiresProject=true)
 public class GenerateMojo extends AbstractMojo {
 
 	@Parameter
